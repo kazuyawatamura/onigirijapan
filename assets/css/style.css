@@ -122,7 +122,7 @@ a:hover {
     padding-bottom: 10px;
     margin-bottom: 36px;
     border-bottom: none;
-    background: url(../img/bg_navi.png) no-repeat bottom left;
+    background: url(../images/bg_navi.png) no-repeat bottom left;
   }
   .navigation-item:first-child {
     border-top: none;
@@ -265,7 +265,7 @@ PHOTO
 }
 .photo-item img {
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   border-radius: 10px;
 }
 
