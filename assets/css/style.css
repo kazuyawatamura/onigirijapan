@@ -148,11 +148,20 @@ a:hover {
     position: relative;
     margin-bottom: 100px;
   }
-  .hero .mapicon {
+  /* .hero .mapicon {
     display: block;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 30px;
+    right: 30px;
+  } */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/mapicon.png) no-repeat 0 0;
   }
 }
 
