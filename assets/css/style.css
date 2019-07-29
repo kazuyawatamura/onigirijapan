@@ -229,7 +229,7 @@ a:hover {
     text-align: left;
   }
   .concept-text img {
-    display: inline;
+    /* display: inline; */
     float: right;
     margin: 0 0 0 20px;
   }
