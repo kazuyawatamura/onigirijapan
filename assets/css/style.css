@@ -209,11 +209,6 @@ a:hover {
   font-weight: bold;
   margin-bottom: 26px;
 }
-.concept-text img {
-  display: block;
-  width: 180px;
-  margin: 0 auto 20px;
-}
 
 @media (min-width:767px) {
   .concept-wrapper {
@@ -228,11 +223,6 @@ a:hover {
   }
   .concept-title {
     text-align: left;
-  }
-  .concept-text img {
-    /* display: inline; */
-    float: right;
-    margin: 0 0 0 20px;
   }
   .concept-text {
     line-height: 2;
@@ -255,10 +245,11 @@ PHOTO
   width: 45%;
   margin-bottom: 20px;
 }
-.photo-item img {
+.photo-item a img {
   display: block;
   margin: 0 auto 10px;
   border-radius: 10px;
+  transition: all .2s ease;
 }
 
 @media (min-width:767px) {
@@ -270,32 +261,7 @@ PHOTO
   .photo-item:nth-child(3n) {
     margin-right: 0;
   }
-  .photo-item figure {
-    position: relative;
-    overflow: hidden;
-  }
-  .photo-item figcaption {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.7);
-    border-radius: 10px;
-    transition: opacity .5s ease;
-  }
-  /* hover した時に説明文字がでる　*/
-  .photo-list li a:hover figcaption {
-    opacity: 1;
-  }
-  .photo-list li a {
-    color: #fff;
-  }
-  .photo-item img {
-    margin-bottom: 0;
+  .photo-list a:hover img {
+    opacity: .8;
   }
 }
