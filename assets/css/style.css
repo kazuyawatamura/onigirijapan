@@ -206,8 +206,12 @@ a:hover {
 .concept-title {
   text-align: center;
   font-size: 2.6rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 26px;
+}
+.concept-text {
+  line-height: 2;
+  letter-spacing: .05rem;
 }
 
 @media (min-width:767px) {
@@ -224,10 +228,6 @@ a:hover {
   .concept-title {
     text-align: left;
   }
-  .concept-text {
-    line-height: 2;
-    letter-spacing: .1rem;
-  }
 }
 
 /* ===============================
@@ -239,9 +239,6 @@ PHOTO
   justify-content: space-between;
 }
 .photo-item {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-weight: bold;
   width: 45%;
   margin-bottom: 20px;
 }
