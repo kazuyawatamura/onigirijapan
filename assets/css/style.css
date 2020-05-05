@@ -67,7 +67,7 @@ a:hover {
 ナビゲーション 
 =============================== */
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 5%;
   z-index: 2;
