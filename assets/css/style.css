@@ -242,7 +242,7 @@ PHOTO
   width: 45%;
   margin-bottom: 20px;
 }
-.photo-item a img {
+.photo-item a img{
   display: block;
   margin: 0 auto 10px;
   border-radius: 10px;
@@ -258,7 +258,9 @@ PHOTO
   .photo-item:nth-child(3n) {
     margin-right: 0;
   }
-  .photo-list a:hover img {
+  .photo-item a:hover img {
     opacity: .8;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .6);
   }
 }
