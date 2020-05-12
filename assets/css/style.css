@@ -212,6 +212,7 @@ a:hover {
 .concept-text {
   line-height: 2;
   letter-spacing: .05rem;
+  margin-bottom: 10px;
 }
 
 @media (min-width:767px) {
@@ -248,19 +249,39 @@ PHOTO
   border-radius: 10px;
   transition: all .2s ease;
 }
+.photo-desc {
+  text-align: center;
+}
 
 @media (min-width:767px) {
   .photo-item {
     width: 270px;
-    margin-right: 70px;
+    /* margin-right: 70px; */
     margin-bottom: 40px;
   }
-  .photo-item:nth-child(3n) {
+  /* .photo-item:nth-child(3n) {
     margin-right: 0;
-  }
+  } */
   .photo-item a:hover img {
     opacity: .8;
     transform: translateY(-5px);
     box-shadow: 0 3px 16px rgba(0, 0, 0, .6);
+  }
+}
+/* ===============================
+FOOTER 
+=============================== */
+.footer {
+  text-align: center;
+  margin: 0 0 15px;
+}
+.copyright {
+  display: block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width:768px) {
+  .footer {
+    margin: 0 0 20px;
   }
 }
