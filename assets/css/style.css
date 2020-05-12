@@ -1,25 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 html {
+  /* remでのフォントサイズを計算しやすくする */
   font-size: 10px;
 }
 body {
+  /* ベースフォントを設定（14px相当） */
   font-size: 1.4rem;
+  /* ベースのフォントファミリーを設定 */
   font-family: sans-serif;
 }
 
 a {
-  color: #333;
+  /* リンクスタイルを設定 */
+  color: #000;
   text-decoration: none;
+  /* マウスホバーした際のアニメーション */
   transition: color .5s ease;
 }
 a:hover {
+  /* マウスホバーした際のリンクカラーを設定 */
   color: #0099cc;
 }
 
+/* 767px以上の時に適用するCSS */
 @media (min-width:767px) {
   .wrapper {
+    /* 横幅の設定 */
     width: 950px;
+    /* ブラウザの中央に配置 */
     margin: 0 auto;
   }
 }
@@ -28,12 +37,16 @@ a:hover {
 共通
 =============================== */
 .main-area {
+  /* 左右に5%の隙間 */
   margin: 0 5%;
 }
 .section-title {
   font-size: 1.6rem;
+  /* ブロック要素内の中央に配置 */
   text-align: center;
+  /* Google FontsのWebフォントを設定 */
   font-family: 'Montserrat', sans-serif;
+  /* 文字感の調整 */
   letter-spacing: .1rem;
   margin: 0 auto 50px;
 }
