@@ -227,6 +227,9 @@ a:hover {
   letter-spacing: .05rem;
   margin-bottom: 10px;
 }
+.concept-text:last-of-type {
+  margin-bottom: 0;
+}
 
 @media (min-width:767px) {
   .concept-wrapper {
