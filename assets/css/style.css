@@ -107,7 +107,7 @@ a:hover {
 .navigation-item {
   border-bottom: 1px solid #ccc;
 }
-.navigation-item:first-child {
+.navigation-item:first-of-type {
   border-top: 1px solid #ccc;
 }
 .navigation-item a {
@@ -137,7 +137,7 @@ a:hover {
     border-bottom: none;
     background: url(../images/bg_navi.png) no-repeat bottom left;
   }
-  .navigation-item:first-child {
+  .navigation-item:first-of-type {
     border-top: none;
   }
   .navigation-item a {
