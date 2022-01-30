@@ -126,6 +126,7 @@ a:hover {
     position: static;
     background-color: transparent;
     padding: 0;
+    margin-bottom: 36px;
   }
   .navigation-list {
     display: flex;
@@ -133,7 +134,6 @@ a:hover {
   .navigation-item {
     width: 160px; /* flexで横幅調整される -> 158.33px */
     padding-bottom: 10px;
-    margin-bottom: 36px;
     border-bottom: none;
     background: url(../images/bg_navi.png) no-repeat bottom left;
   }
