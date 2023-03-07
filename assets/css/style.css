@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
+:root {
+  --black100: #333333;
+  --blue50: #0099CC;
+}
+
 html {
   /* remでのフォントサイズを計算しやすくする */
-  font-size: 10px;
+  font-size:  62.5%;
 }
 body {
   /* ベースフォントを設定（14px相当） */
@@ -13,14 +18,12 @@ body {
 
 a {
   /* リンクスタイルを設定 */
-  color: #000;
+  color: var(--black100);
   text-decoration: none;
-  /* マウスホバーした際のアニメーション */
-  transition: color .5s ease;
 }
 a:hover {
   /* マウスホバーした際のリンクカラーを設定 */
-  color: #0099cc;
+  color: var(--blue50);
 }
 
 /* 767px以上の時に適用するCSS */
@@ -130,41 +133,49 @@ a:hover {
   }
   .navigation-list {
     display: flex;
+    gap: 24px
   }
   .navigation-item {
-    width: 160px; /* flexで横幅調整される -> 158.33px */
-    padding-bottom: 10px;
+    width: 100%;
     border-bottom: none;
-    background: url(../images/bg_navi.png) no-repeat bottom left;
   }
   .navigation-item:first-of-type {
     border-top: none;
   }
   .navigation-item a {
-    text-align: left;
+    height: 40px;
+    line-height: 40px;
     padding: 0;
+    background-color: #fafafa;
+    border-radius: 4px;
+    /* マウスホバーした際のアニメーション */
+    transition: all .5s ease;
+  }
+  .navigation-item a:hover {
+    color: #fff;
+    background-color: var(--blue50);
   }
 }
 
 
 /* ===============================
-ヒーロー 
+メインイメージ 
 =============================== */
-.hero {
+.mainimage {
   position: relative;
   margin-bottom: 80px;
 }
-.hero .mapicon {
+.mainimage .mapicon {
   display: block;
   position: absolute;
   top: 8px;
   right: 8px;
 }
 @media (min-width:767px) {
-  .hero {
+  .mainimage {
     margin-bottom: 100px;
   }
-  .hero .mapicon {
+  .mainimage .mapicon {
     top: 30px;
     right: 30px;
   }
@@ -192,7 +203,7 @@ a:hover {
   flex-shrink: 0;
 }
 .news-item a {
-  color: #0099cc;
+  color: var(--blue50);
 }
 
 @media (min-width:767px) {
@@ -206,6 +217,9 @@ a:hover {
   }
   .news-item a {
     text-decoration: underline;
+  }
+  .news-item a:hover {
+    text-decoration: none;
   }
 }
 
@@ -224,7 +238,6 @@ a:hover {
 }
 .concept-text {
   line-height: 2;
-  letter-spacing: .05rem;
   margin-bottom: 10px;
 }
 .concept-text:last-of-type {
@@ -234,10 +247,10 @@ a:hover {
 @media (min-width:767px) {
   .concept-wrapper {
     display: flex;
+    gap: 50px;
   }
   .concept-image {
     flex-shrink: 0;
-    margin-right: 50px;
   }
   .concept-image {
     margin-bottom: 0;
@@ -250,6 +263,7 @@ a:hover {
 /* ===============================
 PHOTO 
 =============================== */
+/* Flexboxで行なう場合
 .photo-list {
   display: flex;
   flex-wrap: wrap;
@@ -258,6 +272,12 @@ PHOTO
 .photo-item {
   width: 45%;
   margin-bottom: 20px;
+} */
+
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 .photo-item a img{
   display: block;
@@ -270,13 +290,17 @@ PHOTO
 }
 
 @media (min-width:767px) {
+  .photo-list {
+    gap: 40px 70px;
+  }
+  /* Flexboxで行なう場合
   .photo-item {
     width: 270px;
-    /* margin-right: 70px; */
     margin-bottom: 40px;
   }
-  /* .photo-item:nth-child(3n) {
-    margin-right: 0;
+  .photo-item {
+    width: 270px;
+    margin-bottom: 40px;
   } */
   .photo-item a:hover img {
     opacity: .8;
