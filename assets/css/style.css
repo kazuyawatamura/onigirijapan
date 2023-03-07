@@ -165,6 +165,9 @@ a:hover {
   position: relative;
   margin-bottom: 80px;
 }
+.mainimage .image {
+  border-radius: 4px;
+}
 .mainimage .mapicon {
   display: block;
   position: absolute;
@@ -229,6 +232,9 @@ a:hover {
 .concept-image {
   text-align: center;
   margin-bottom: 40px;
+}
+.concept-image img {
+  border-radius: 4px;
 }
 .concept-title {
   text-align: center;
