@@ -1,2 +1,2 @@
 # onigirijapan
-HTML練習用サイト
+HTML練習用サイトです。
